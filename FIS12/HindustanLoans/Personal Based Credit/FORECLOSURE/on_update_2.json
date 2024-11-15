@@ -1,0 +1,32 @@
+{
+    "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "*"
+            }
+        },
+        "transaction_id": "feffe8e2-69be-43fc-82be-b77c3c8cb130",
+        "message_id": "81ba498e-ea71-491a-99af-32aaa88fdc35",
+        "action": "update",
+        "timestamp": "2024-11-14T13:05:38.840Z",
+        "version": "2.0.0",
+        "bap_uri": "https://bap.hindustanloans.com/preprod/",
+        "bap_id": "bap.hindustanloans.com",
+        "ttl": "PT10M",
+        "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+        "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+    },
+    "message": {
+        "ack": {
+            "status": "NACK"
+        }
+    },
+    "error": {
+        "code": "30001",
+        "message": "Request not Allowed. The loan has not been disbursed"
+    }
+}

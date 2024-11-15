@@ -1,0 +1,136 @@
+{
+    "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "*"
+            }
+        },
+        "version": "2.0.0",
+        "action": "init",
+        "transaction_id": "feffe8e2-69be-43fc-82be-b77c3c8cb130",
+        "message_id": "37fd08a2-9119-4d28-aba6-ca02851ad27a",
+        "timestamp": "2024-11-14T12:59:27.622Z",
+        "bap_uri": "https://bap.hindustanloans.com/preprod/",
+        "bap_id": "bap.hindustanloans.com",
+        "ttl": "PT10M",
+        "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+        "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "c29d8cf3-5eeb-4aac-9eff-f5fadfd4dbc3"
+            },
+            "items": [
+                {
+                    "id": "3b55859a-0d94-427e-b1ef-9deab8cb6928",
+                    "xinput": {
+                        "form": {
+                            "id": "3021be53-7713-4033-9cee-642476e2a52b"
+                        },
+                        "form_response": {
+                            "status": "SUCCESS",
+                            "submission_id": "0be4afc5-1a98-4142-86a3-316f29330ccb"
+                        }
+                    }
+                }
+            ],
+            "payments": [
+                {
+                    "id": "487ce0df-2691-4d51-8ba0-ddf58fb6ce2d",
+                    "type": "ON_ORDER",
+                    "status": "NOT-PAID",
+                    "collected_by": "BPP",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEES"
+                            },
+                            "display": false,
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "BUYER_FINDER_FEES_TYPE"
+                                    },
+                                    "value": "percent-annualized"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "SETTLEMENT_TERMS"
+                            },
+                            "display": false,
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "SETTLEMENT_WINDOW"
+                                    },
+                                    "value": "PT60M"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SETTLEMENT_BASIS"
+                                    },
+                                    "value": "INVOICE_RECEIPT"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "MANDATORY_ARBITRATION"
+                                    },
+                                    "value": "TRUE"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "COURT_JURISDICTION"
+                                    },
+                                    "value": "New Delhi"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "STATIC_TERMS"
+                                    },
+                                    "value": "https://bpp.credit.becknprotocol.org/personal-banking/loans/personal-loan"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "OFFLINE_CONTRACT"
+                                    },
+                                    "value": "true"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SETTLEMENT_AMOUNT"
+                                    },
+                                    "value": "1666.67"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "DELAY_INTEREST"
+                                    },
+                                    "value": "5"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SETTLEMENT_TYPE"
+                                    },
+                                    "value": "neft"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

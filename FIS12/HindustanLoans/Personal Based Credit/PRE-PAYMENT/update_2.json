@@ -1,0 +1,40 @@
+{
+    "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "*"
+            }
+        },
+        "transaction_id": "2e1872ca-293a-42ee-b08b-6239623a6271",
+        "message_id": "b7c8f505-6045-4540-afd8-730f562bf2a1",
+        "action": "update",
+        "timestamp": "2024-11-14T11:40:57.421Z",
+        "version": "2.0.0",
+        "bap_uri": "https://bap.hindustanloans.com/preprod/",
+        "bap_id": "bap.hindustanloans.com",
+        "ttl": "PT10M",
+        "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+        "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+    },
+    "message": {
+        "update_target": "payments",
+        "order": {
+            "id": "2a710220-d425-4ed7-9312-d220f0407cd7",
+            "payments": [
+                {
+                    "time": {
+                        "label": "PRE_PART_PAYMENT"
+                    },
+                    "params": {
+                        "amount": "5000",
+                        "currency": "INR"
+                    }
+                }
+            ]
+        }
+    }
+}

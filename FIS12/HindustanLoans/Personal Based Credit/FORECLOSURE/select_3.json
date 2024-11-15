@@ -1,0 +1,44 @@
+{
+    "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "*"
+            }
+        },
+        "version": "2.0.0",
+        "action": "select",
+        "transaction_id": "feffe8e2-69be-43fc-82be-b77c3c8cb130",
+        "message_id": "e3edeeae-6343-4a8e-9a58-2108b71b9c53",
+        "timestamp": "2024-11-14T12:56:37.602Z",
+        "bap_uri": "https://bap.hindustanloans.com/preprod/",
+        "bap_id": "bap.hindustanloans.com",
+        "ttl": "PT10M",
+        "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+        "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "c29d8cf3-5eeb-4aac-9eff-f5fadfd4dbc3"
+            },
+            "items": [
+                {
+                    "id": "3b55859a-0d94-427e-b1ef-9deab8cb6928",
+                    "xinput": {
+                        "form": {
+                            "id": "7ef273f4-c84b-4b37-8b64-3e093b92b5a8"
+                        },
+                        "form_response": {
+                            "status": "SUCCESS",
+                            "submission_id": "42ef89ef-4265-4d88-b2a0-deab8671f67f"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

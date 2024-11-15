@@ -1,0 +1,81 @@
+{
+    "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "*"
+            }
+        },
+        "version": "2.0.0",
+        "action": "search",
+        "transaction_id": "feffe8e2-69be-43fc-82be-b77c3c8cb130",
+        "message_id": "d441e0ce-cdc8-489a-8f36-539132b6ea7e",
+        "timestamp": "2024-11-14T12:54:01.639Z",
+        "bap_uri": "https://bap.hindustanloans.com/preprod/",
+        "bap_id": "bap.hindustanloans.com",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "descriptor": {
+                    "code": "PERSONAL_LOAN"
+                }
+            },
+            "payment": {
+                "collected_by": "BPP",
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "BUYER_FINDER_FEES"
+                        },
+                        "display": false,
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "BUYER_FINDER_FEES_TYPE"
+                                },
+                                "value": "percent-annualized"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                                },
+                                "value": "1"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "SETTLEMENT_TERMS"
+                        },
+                        "display": false,
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "DELAY_INTEREST"
+                                },
+                                "value": "2.5"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "STATIC_TERMS"
+                                },
+                                "value": "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "OFFLINE_CONTRACT"
+                                },
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
